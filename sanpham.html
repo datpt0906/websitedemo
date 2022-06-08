@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body onload="thongbaopopup()">
+    <div class="noidungtrangsanpham">
+     <!-- nhúng trang facebook -->
+
+     <div id="fb-root"></div>
+     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0"
+         nonce="FoQh01Of"></script>
+     <!--========== SCROLL TOP ==========-->
+     <a href="#" class="scrolltop" id="scroll-top">
+         <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+     </a>
+    <!-- phần trang chính -->
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href=""><img src="https://media.loveitopcdn.com/5766/anh-ba-na-pet-house-02.png"></a>
+            </div>
+            <div class="menu">
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <ul class="navigation">
+                    <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i> TRANG CHỦ</a></li>
+                    <li><a href="sanpham.html"><i class="fa-solid fa-bag-shopping"></i> SẢN PHẨM</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i> GIỎ HÀNG</a></li>
+                    <li><a href="dangnhap.html"><i class="fa-solid fa-user"></i> ĐĂNG NHẬP</a></li>
+                    <li><a href="dangki.html"><i class="fa-solid fa-user"></i> ĐĂNG KÍ</a></li>
+
+                </ul>
+                <div class="search1">
+                <form action="" class="search-bar">
+                    <input type="search" name="search" pattern=".*\S.*" required>
+                    <button class="search-btn" type="submit">
+                        <span>Search</span>
+                    </button>
+                </form>
+                </div>
+            </div>
+    </header> 
+    <div class="tudongchaychu"> 
+        <div class="tudongchaychu1">
+        <marquee >
+            
+        <p>Pet Mart  là chuỗi pet shop thú cưng Đồ dùng cho chó  – Đồ dùng cho mèo  tại Hà Nội, TP.HCM, Đà Nẵng và Hải Phòng với hệ thống nhiều chi nhánh cửa hàng thú cưng chuyên cung cấp đồ dùng, quần áo, thức ăn, sữa tắm, chuồng, vòng cổ xích và các phụ kiện cho Chó cảnh , Mèo cảnh , Cá cảnh . Cùng nhiều bài viết chia sẻ kinh nghiệm chăm sóc Thỏ cảnh , Chuột cảnh , Sóc cảnh , Chim cảnh , Bò sát  cảnh hàng đầu tại Việt Nam. Địa chỉ nhận tắm spa, chăm sóc, cắt tỉa lông và trông giữ thú cưng chuyên nghiệp. Với chất lượng dịch vụ tốt nhất luôn được khách hàng tin tưởng sẽ là điểm đến lý tưởng và tuyệt vời dành cho vật nuôi.</p>
+           
+    </marquee>
+        </div>
+    </div>
+   
+    <div class="trangsanpham">
+        
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href=""><img class="d-block w-100" src="https://komapet.com/wp-content/uploads/2022/03/koma-banner.jpg" alt="First slide"></a>
+                </div>
+                <div class="carousel-item">
+                  <a href=""><img class="d-block w-100" src="https://petcung.vn/upload/hinhanh/giam-7510.jpg" alt="Second slide"></a>
+                </div>
+                <div class="carousel-item">
+                  <a href=""><img class="d-block w-100" src="https://petcung.vn/upload/hinhanh/ddd-1006.jpg" alt="Third slide"></a>
+                </div>
+              </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">NHIỀU SẢN PHẨM HƠN</a>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Thức ăn cho pet</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Đồ chơi cho pet</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Các loại pet khác</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Các sản phẩm khác
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Hạt thức ăn cho pet</a>
+                      <a class="dropdown-item" href="#">Dịch vụ y tế</a>
+                      <a class="dropdown-item" href="#">Trang thiết bị vệ sinh cho pet</a>
+                    </div>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        <div class="trangsanphamdoitac">
+            <div class="tentieudesp">
+                <h2>SHOP ĐỐI TÁC</h2>
+                </div>
+                <div class="tentieudesp1">
+                    </div>
+        <div class="cacshophoptac">
+            <div class="cacshophoptac1">
+            <div class="thuonghieu">
+                <a href="">
+                <img src="https://petzone.vn/public/upload/logo/logo-petzone.png">
+                <div class="tenshop">
+                    <h5>Đậu Đậu</h5>
+                    <p>Giá sốc<h6>khuyến mãi 50%</h6></p>
+                </div>
+                </a>
+            </div>
+            <div class="sanphamcuashop1">
+                <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://www.petmart.vn/wp-content/uploads/2020/12/pate-cho-cho-vi-thit-bo-iris-hrb375-beef3-400x400.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+            <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://www.petmart.vn/wp-content/uploads/2019/04/pate-cho-cho-vi-ca-iris-one-care-fish100g-400x400.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+            <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://www.petmart.vn/wp-content/uploads/2019/04/pate-cho-cho-vi-gan-ga-iris-one-care-chicken-liver100g-400x400.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+            <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://www.petmart.vn/wp-content/uploads/2019/04/pate-cho-cho-cham-soc-rang-mieng-iris-benefit-for-teeth-400x400.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="cacshophoptac">
+            <div class="cacshophoptac1">
+                <div class="thuonghieu">
+                    <a href="">
+                    <img src="https://mypet.vn/wp-content/uploads/2020/07/new-logo.png">
+                    <div class="tenshop">
+                        <h5>Pet Gold</h5>
+                        <p>Giá sốc<h6>khuyến mãi 50%</h6></p>
+                    </div>
+                    </a>
+                </div>
+            <div class="sanphamcuashop1">
+                <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://www.petmart.vn/wp-content/uploads/2021/05/sot-pate-cho-cho-vi-gan-va-uc-ga-inaba-chicken-breast-liver-400x400.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+            <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://www.petmart.vn/wp-content/uploads/2019/04/pate-cho-cho-con-iris-for-puppy-400x400.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+            <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://www.petmart.vn/wp-content/uploads/2019/04/pate-cho-cho-vi-me-ga-iris-one-care-gizzard100g-400x400.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+            <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://www.petmart.vn/wp-content/uploads/2016/04/pate-cho-cho-vi-thit-bo-ca-rot-jerhigh-beef-grilled-carrot-gravy-400x400.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="cacshophoptac">
+            <div class="cacshophoptac1">
+                <div class="thuonghieu">
+                    <a href="">
+                    <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/logo-kami-pet-cremation.png">
+                    <div class="tenshop">
+                        <h5>Ka Mi</h5>
+                        <p>Giá sốc<h6>khuyến mãi 50%</h6></p>
+                    </div>
+                    </a>
+                </div>
+            <div class="sanphamcuashop1">
+                <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://product.hstatic.net/1000238938/product/41cfe7e0f8d14a899b5b8b6ae700088f_8bfc795d605147e69efe45ff3d0ae39c_medium.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+            <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://www.petmart.vn/wp-content/uploads/2019/04/pate-cho-cho-vi-thit-bo-iris-one-care-beef100g-400x400.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+            <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://www.petmart.vn/wp-content/uploads/2013/03/dau-xa-cho-cho-meo-duong-long-joyce-dolls-dog-coat-finishing-conditioner-400x400.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+            <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://www.petmart.vn/wp-content/uploads/2013/03/Sua-tam-kho-cho-cho-meo-Joyce-Dolls-Waterless-Cleansing-Foam0-400x400.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="cacshophoptac">
+            <div class="cacshophoptac1">
+                <div class="thuonghieu">
+                    <a href="">
+                    <img src="https://gougoupet.vn/wp-content/uploads/2020/12/logo-gougoupet_600x600.png">
+                    <div class="tenshop">
+                        <h5>Gou Gou</h5>
+                        <p>Giá sốc<h6>khuyến mãi 50%</h6></p>
+                    </div>
+                    </a>
+                </div>
+            <div class="sanphamcuashop1">
+                <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://product.hstatic.net/1000238938/product/46e9355f286049959d490b3c29e3abb1_4b3d4e26ddc24be2a7b09fa8bc57980e_medium.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+            <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://product.hstatic.net/1000238938/product/ed9584b12da04dc495219987e752c0a3_1bd115f4843346528b13c2ebc23b987c_medium.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+            <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://product.hstatic.net/1000238938/product/rc_medium_junior_medium.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+            <div class="sanphamcuashop">
+                <a href="">
+                <img src="https://product.hstatic.net/1000238938/product/upload_18b0728ed6a04ff495617c70d87d0d29_medium.jpg">
+                <h4>85.000<sup>đ</sup></h4>
+                </a>
+            </div>
+            
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="trangsanpham1">
+            <div class="tentieudesp">
+            <h2>SẢN PHẨM HIỆN CÓ</h2>
+            </div>
+            <div class="tentieudesp1">
+                </div>
+            <div class="sanpham1">
+                <div class="sanpham1_1">
+                    <a href="">
+                    <img src="https://www.petmart.vn/wp-content/uploads/2019/04/pate-cho-cho-vi-thit-bo-tron-com-iris-beef-rice-400x400.jpg">
+                    <div class="tieudesanpham">
+                    <h4>Pate cho chó vị thịt bò trộn cơm IRIS Beef Rice</h4>
+                    <h5>35.000<sup>đ</sup></h5>
+                    <p>25.000<sup>đ</sup><em>-46%</em></p>
+                    <div class="danhgia">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(287)</p>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="sanpham1_1">
+                    <a href="">
+                    <img src="https://www.petmart.vn/wp-content/uploads/2021/04/sua-tuoi-cho-cho-meo-it-beo-dr-holi-pet-milk-red-ginseng-400x400.jpg">
+                    <div class="tieudesanpham">
+                    <h4>Sữa tươi cho chó mèo ít béo DR HOLI Pet Milk Red Ginseng</h4>
+                    <h5>90.000<sup>đ</sup></h5>
+                    <p>25.000<sup>đ</sup><em>-46%</em></p>
+                    <div class="danhgia">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(287)</p>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="sanpham1_1">
+                    <a href="">
+                    <img src="https://www.petmart.vn/wp-content/uploads/2019/04/xuong-cho-cho-vi-rau-tuoi-paw-fresh-bone-vegetable-flavor-400x400.jpg">
+                    <div class="tieudesanpham">
+                    <h4>Xương cho chó vị rau tươi PAW Fresh Bone Vegetable Flavor</h4>
+                    <h5>15.000<sup>đ</sup></h5>
+                    <p>25.000<sup>đ</sup><em>-46%</em></p>
+                    <div class="danhgia">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(287)</p>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="sanpham1_1">
+                    <a href="">
+                    <img src="https://www.petmart.vn/wp-content/uploads/2020/11/thuc-an-cho-cho-samoyed-mkb-all-life-stages-formula-nutrition-400x400.jpg">
+                    <div class="tieudesanpham">
+                    <h4>Thức ăn cho chó Samoyed MKB All Life Stages Formula Nutrition</h4>
+                    <h5>13.500<sup>đ</sup></h5>
+                    <p>25.000<sup>đ</sup><em>-46%</em></p>
+                    <div class="danhgia">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(287)</p>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="sanpham1_1">
+                    <a href="">
+                    <img src="https://www.petmart.vn/wp-content/uploads/2019/04/banh-thuong-cho-cho-vi-thit-ga-vegebrand-mini-chicken-bone-400x400.jpg">
+                    <div class="tieudesanpham">
+                    <h4>Bánh thưởng cho chó vị thịt gà VEGEBRAND Mini Chicken Bone</h4>
+                    <h5>13.500<sup>đ</sup></h5>
+                    <p>25.000<sup>đ</sup><em>-46%</em></p>
+                    <div class="danhgia">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(287)</p>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="sanpham1_1">
+                    <a href="">
+                    <img src="https://www.petmart.vn/wp-content/uploads/2013/05/pate-cho-meo-vi-nuoc-sot-bach-tuoc-whiskas-octopus-flavour-sauce-400x400.jpg">
+                    <div class="tieudesanpham">
+                    <h4>Pate cho mèo vị nước sốt bạch tuộc WHISKAS Octopus Flavour Sauce</h4>
+                    <h5>13.500<sup>đ</sup></h5>
+                    <p>25.000<sup>đ</sup><em>-46%</em></p>
+                    <div class="danhgia">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(287)</p>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="sanpham1_1">
+                    <a href="">
+                    <img src="https://www.petmart.vn/wp-content/uploads/2019/04/Wholesale-natural-pet-new-products-380g-milk-400x400.jpg">
+                    <div class="tieudesanpham">
+                    <h4>Sữa bột cho mèo con BBN Kitten Milk</h4>
+                    <h5>13.500<sup>đ</sup></h5>
+                    <p>25.000<sup>đ</sup><em>-46%</em></p>
+                    <div class="danhgia">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(287)</p>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="sanpham1_1">
+                    <a href="">
+                    <img src="https://www.petmart.vn/wp-content/uploads/2021/05/pate-cho-meo-ciao-tuna-scallop-vi-ca-hoi-va-so-diep-400x400.jpg">
+                    <div class="tieudesanpham">
+                    <h4>Pate cho mèo CIAO Tuna & Scallop vị cá ngừ và sò điệp</h4>
+                    <h5>13.500<sup>đ</sup></h5>
+                    <p>25.000<sup>đ</sup><em>-46%</em></p>
+                    <div class="danhgia">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(287)</p>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="sanpham1_1">
+                    <a href="">
+                    <img src="https://www.petmart.vn/wp-content/uploads/2020/11/Banh-thuong-cho-meo-vi-thit-ga-MUO-MUO-Chicken-Flavor-400x400.jpg">
+                    <div class="tieudesanpham">
+                    <h4>Bánh thưởng cho mèo vị thịt gà MUO MUO Chicken Flavor</h4>
+                    <h5>13.500<sup>đ</sup></h5>
+                    <p>25.000<sup>đ</sup><em>-46%</em></p>
+                    <div class="danhgia">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(287)</p>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="sanpham1_1">
+                    <a href="">
+                    <img src="https://www.petmart.vn/wp-content/uploads/2020/12/soup-an-lien-cho-meo-ciao-tuna-whitebait-vi-ca-ngu-va-ca-moi-400x400.jpg">
+                    <div class="tieudesanpham">
+                    <h4>Soup cho mèo CIAO Tuna & Whitebait vị cá ngừ và cá mồi</h4>
+                    <h5>13.500<sup>đ</sup></h5>
+                    <p>25.000<sup>đ</sup><em>-46%</em></p>
+                    <div class="danhgia">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(287)</p>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="sanpham1_1">
+                    <a href="">
+                    <img src="https://www.petmart.vn/wp-content/uploads/2019/09/sua-tam-cho-cho-long-mau-nau-do-joyce-dolls-102-red-brown-hair-400x400.jpg">
+                    <div class="tieudesanpham">
+                    <h4>Sữa tắm cho chó lông màu nâu đỏ JOYCE & DOLLS 102 Red Brown Hair</h4>
+                    <h5>13.500<sup>đ</sup></h5>
+                    <p>25.000<sup>đ</sup><em>-46%</em></p>
+                    <div class="danhgia">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(287)</p>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="sanpham1_1">
+                    <a href="">
+                    <img src="https://www.petmart.vn/wp-content/uploads/2014/09/sua-tam-cho-meo-mui-huong-khoai-mon-bbn-taro-silky-400x400.jpg">
+                    <div class="tieudesanpham">
+                    <h4>Sữa tắm chó mèo mùi hương khoai môn BBN Taro Silky</h4>
+                    <h5>13.500<sup>đ</sup></h5>
+                    <p>25.000<sup>đ</sup><em>-46%</em></p>
+                    <div class="danhgia">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(287)</p>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="cactrang">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+
+
+<div class="noidungcuoitrangsanpham">
+    <div class="tentieudesp">
+        <h2>HƯỚNG DẪN SỬ DỤNG</h2>
+        </div>
+        <div class="tentieudesp1">
+            </div>
+    <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Click Me
+          </button>
+      </p>
+
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            
+                <!-- <iframe src="https://www.youtube.com/embed/INXw54A66UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <h5>Giới thiệu về shop</h5>
+        </div>
+      </div>
+</div>
+
+
+
+
+    
+
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                <h3>VỀ CHÚNG TÔI</h3>
+                <a href="">
+                    <p>Giới thiệu</p>
+                </a>
+                <a href="">
+                    <p>Chính sách & Quy định chung</p>
+                </a>
+                <a href="">
+                    <p>Quy định và hình thức thanh toán</p>
+                </a>
+                <a href="">
+                    <p>Chính sách bảo hành</p>
+                </a>
+                <a href="">
+                    <p>Chính sách vận chuyển và giao nhận</p>
+                </a>
+                <a href="">
+                    <p>Chính sách bảo mật thông tin cá nhân</p>
+                </a>
+                <a href="">
+                    <p>Chính sách đổi/ trả hàng và hoàn tiền</p>
+                </a>
+
+            </div>
+            <div class="footer1">
+                <h3>THÔNG TIN CÔNG TY</h3>
+                <p>©2018 DogParadise Bản quyền được bảo hộ Công ty TNHH TOPDOG
+                    313 Hoàng Diệu, P6, Quận 4, TP Hồ Chí Minh, Việt Nam. Mã bưu chính 700000
+                    Điện thoại: 0922 333 111
+                    Giấy chứng nhận Đăng ký Kinh doanh số 0313596126 Do Sở Kế Hoạch và Đầu Tư TPHCM cấp ngày 31/12/2015
+                </p>
+
+            </div>
+            <div class="footer1">
+                <h3>MẠNG XÃ HỘI</h3>
+                <p>Hãy kết nối với chúng tôi.</p>
+                <ul>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></i>
+                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </ul>
+                <a href=""><img src="https://images.dmca.com/Badges/dmca_protected_28_120.png?ID=393dc76b-167d-4b15-9310-a196f58368a0"></a>
+                <div class="zalo">
+                    <a href="">
+                        <img src="https://stc-zaloprofile.zdn.vn/pc/v1/images/zalo_sharelogo.png">
+                        <p>Liên Hệ Bằng ZALO</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer2">
+                <h3>HỆ THỐNG SHOP THÚ CƯNG CỦA DATPHAM</h3>
+                <a href=""><h5>Dog Paradise Quận 1</h5></a>
+                <a href=""><p>7 Trần Khắc Chân, P.Tân Định, Quận 1, TPHCM</p></a>
+                <p>Điện thoại: <a href="">0900198888</a></p>
+                <a href=""><h5>Dog Paradise Quận 4</h5></a>
+                <a href=""><p>249 Khánh Hội, P2, Quận 4, TPHCM</p></a>
+                <p>Điện thoại: <a href="">0900198888</a></p>
+                <a href=""><h5>Dog Paradise Võ Văn Tần</h5></a>
+                <a href=""><p>217 Võ Văn Tần, P5, Quận 3, TPHCM</p></a>
+                <p>Điện thoại: <a href="">0900198888</a></p>
+            </div>
+            <div class="chusohuu">
+                <h4>Được thiết kế bởi: <a href="">Phạm Trường Đạt</a></h4>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thong bao pupup -->
+    <div class="tbpopup" id="tbpopup-1">
+        <div class="tboverlay"></div>
+        <div class="tbcontent">
+            <div class="tbclose-btn" onclick="thongbaopopup()">&times;</div>
+            <div style="font-size:30px;font-weight:bold">Chào bạn</div>
+            <p>Đây là trang sản phẩm, tất cả các mặt hàng sẽ được xuất hiện tại đây</p>
+        </div>
+    </div>
+    
+    </div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

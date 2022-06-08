@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="thongbaopopup()">
+    <!-- nhúng trang facebook -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0"
+        nonce="FoQh01Of"></script>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+    <!-- quảng cáo -->
+
+    <!-- phần trang chính -->
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href=""><img src="https://media.loveitopcdn.com/5766/anh-ba-na-pet-house-02.png"></a>
+            </div>
+            <div class="menu">
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <ul class="navigation">
+                    <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i> TRANG CHỦ</a></li>
+                    <li><a href="sanpham.html"><i class="fa-solid fa-bag-shopping"></i> SẢN PHẨM</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i> GIỎ HÀNG</a></li>
+                    <li><a href="dangnhap.html"><i class="fa-solid fa-user"></i> ĐĂNG NHẬP</a></li>
+                    <li><a href="dangki.html"><i class="fa-solid fa-user"></i> ĐĂNG KÍ</a></li>
+
+                </ul>
+
+                <form action="" class="search-bar">
+                    <input type="search" name="search" pattern=".*\S.*" required>
+                    <button class="search-btn" type="submit">
+                        <span>Search</span>
+                    </button>
+                </form>
+            </div>
+    </header>
+    <div class="noidungchinh">
+        <div class="banner1">
+            <!-- slider -->
+            <div class="banner">
+                <!-- Slideshow container -->
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://camnanghaiphong.vn/wp-content/uploads/2022/03/Cho-Phoc-Soc-Gia-Bao-Nhieu-Dia-Chi-Ban-Cho-Phoc-Soc-Uy-Tin.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://theme.hstatic.net/1000238938/1000576591/14/slider_index_1_5.jpg?v=325"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://theme.hstatic.net/1000238938/1000576591/14/banner_collection.jpg?v=325"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://theme.hstatic.net/1000238938/1000576591/14/slider_index_1_3.jpg?v=325"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://theme.hstatic.net/1000238938/1000576591/14/slider_index_1_4.jpg?v=325"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="thongtin1">
+    <a href=""><img src="https://azpet.com.vn/wp-content/uploads/2019/09/nguon-goc-husky.png"></a>
+</div> -->
+    </div>
+
+    <div class="sanpham">
+        <div class="sanpham1">
+            <li>
+                <h2>CÁC LOẠI THÚ CƯNG TRÊN SHOP</h2>
+            </li>
+            <div class="ngang"> </div>
+            <div class="tongloaipet">
+
+                <div class="loaipet">
+                    <a href=""><img src="https://thucanh.vn/wp-content/uploads/2021/08/cho-pug-1-1.png"></a>
+                </div>
+                <div class="loaipet">
+                    <a href=""><img src="https://duypets.com/wp-content/uploads/2019/11/M%C3%A8o-Scottish-1.png"></a>
+                </div>
+                <div class="loaipet">
+                    <a href=""><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Melanochlora_sultanea.svg/1200px-Melanochlora_sultanea.svg.png"></a>
+                </div>
+                <div class="loaipet">
+                    <a href=""><img
+                            src="https://www.hibetta.com/wp-content/uploads/2020/02/SuperBagan01-1080x600.png"></a>
+                </div>
+                <div class="loaipet">
+                    <a href=""><img src="https://www.freeiconspng.com/uploads/rabbit-png-30.png"></a>
+                </div>
+                <div class="loaipet">
+                    <a href=""><img
+                            src="https://secureservercdn.net/45.40.149.34/k3n.953.myftpupload.com/vn/wp-content/themes/kamiliant_theme/functions/images/chameleon.png"></a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="sanpham2">
+
+            <div class="tieude1">
+                <h2>PET BÁN CHẠY</h2>
+            </div>
+            <div class="tieude2">
+                <h6>Đây là gian hàng được cập nhật hằng ngày vào lúc 0:00, tại đây sẽ cập nhật các thú cưng có số lượng
+                    bán ra nhiều nhất.</h6>
+            </div>
+            <div class="mathang">
+                <div class="mathang1">
+                    <a href=""><img
+                            src="https://cdn.tgdd.vn/Files/2021/04/12/1342796/15-giong-cho-canh-dep-de-cham-soc-pho-bien-tai-viet-nam-202201200909197585.jpg"
+                            width="100%"></a>
+                    <h4>Chó Chihuahua</h4>
+                    <p>1.200.000<sup>đ</sup></p>
+                    <em>-20%</em>
+                    <div class="muangay">
+                        <a href="">MUA NGAY</a>
+                    </div>
+                </div>
+                <div class="mathang1">
+                    <a href=""><img
+                            src="https://cdn.tgdd.vn/Files/2021/04/12/1342796/15-giong-cho-canh-dep-de-cham-soc-pho-bien-tai-viet-nam-202104121458367801.jpg"
+                            width="100%"></a>
+                    <h4>Chó Bắc Kinh và Bắc Kinh lai Nhật</h4>
+                    <p>1.200.000<sup>đ</sup></p>
+                    <em>-20%</em>
+                    <div class="muangay">
+                        <a href="">MUA NGAY</a>
+                    </div>
+                </div>
+                <div class="mathang1">
+                    <a href=""><img
+                            src="https://cdn.tgdd.vn/Files/2021/04/12/1342796/15-giong-cho-canh-dep-de-cham-soc-pho-bien-tai-viet-nam-202104121459254224.jpg"
+                            width="100%"></a>
+                    <h4>Chó Dachshund (chó Lạp Xưởng/Xúc Xích)</h4>
+                    <p>1.200.000<sup>đ</sup></p>
+                    <em>-20%</em>
+                    <div class="muangay">
+                        <a href="">MUA NGAY</a>
+                    </div>
+                </div>
+                <div class="mathang1">
+                    <a href=""><img src="https://petmaster.vn/petroom/wp-content/uploads/2020/04/meo-canh-5.jpg"
+                            width="100%"></a>
+                    <h4>Mèo Anh lông ngắn</h4>
+                    <p>1.200.000<sup>đ</sup></p>
+                    <em>-20%</em>
+                    <div class="muangay">
+                        <a href="">MUA NGAY</a>
+                    </div>
+                </div>
+                <div class="mathang1">
+                    <a href=""><img src="https://petmaster.vn/petroom/wp-content/uploads/2020/04/meo-canh-3.jpg"
+                            width="100%"></a>
+                    <h4>Mèo xiêm</h4>
+                    <p>1.200.000<sup>đ</sup></p>
+                    <em>-20%</em>
+                    <div class="muangay">
+                        <a href="">MUA NGAY</a>
+                    </div>
+                </div>
+                <div class="mathang1">
+                    <a href=""><img src="https://toplist.vn/images/800px/chim-thien-duong-13988.jpg" width="100%"></a>
+                    <h4>Chim Thiên Đường</h4>
+                    <p>1.200.000<sup>đ</sup></p>
+                    <em>-20%</em>
+                    <div class="muangay">
+                        <a href="">MUA NGAY</a>
+                    </div>
+                </div>
+                <div class="mathang1">
+                    <a href=""><img src="https://toplist.vn/images/800px/chim-tri-vang-14004.jpg" width="100%"></a>
+                    <h4>Chim Trĩ Vàng</h4>
+                    <p>1.200.000<sup>đ</sup></p>
+                    <em>-20%</em>
+                    <div class="muangay">
+                        <a href="">MUA NGAY</a>
+                    </div>
+                </div>
+                <div class="mathang1">
+                    <a href=""><img src="https://toplist.vn/images/800px/chim-gie-cui-xanh-14020.jpg" width="100%"></a>
+                    <h4>Quạ Giẻ Cùi Lam</h4>
+                    <p>1.200.000<sup>đ</sup></p>
+                    <em>-20%</em>
+                    <div class="muangay">
+                        <a href="">MUA NGAY</a>
+                    </div>
+                </div>
+                <div class="mathang1">
+                    <a href=""><img src="https://vietpetgarden.net/wp-content/uploads/2018/10/Carpet-Chameleon.jpg"
+                            width="100%"></a>
+                    <h4>Carpet Chameleon</h4>
+                    <p>1.200.000<sup>đ</sup></p>
+                    <em>-20%</em>
+                    <div class="muangay">
+                        <a href="">MUA NGAY</a>
+                    </div>
+                </div>
+                <div class="mathang1">
+                    <a href=""><img src="https://vietpetgarden.net/wp-content/uploads/2018/06/Veiled-Chameleon.jpg"
+                            width="100%"></a>
+                    <h4>Veiled Chameleon</h4>
+                    <p>1.200.000<sup>đ</sup></p>
+                    <em>-20%</em>
+                    <div class="muangay">
+                        <a href="">MUA NGAY</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="phukienpet">
+        <div class="sanphampet">
+            <div class="tieudemuc">
+                <h2>PHỤ KIỆN PET</h2>
+            </div>
+            <div class="tieudemuc2">
+                <h6>Đây là gian hàng được cập nhật hằng ngày vào lúc 0:00, tại đây sẽ cập nhật các món phụ kiện có số
+                    lượng bán ra nhiều nhất.</h6>
+
+            </div>
+
+        </div>
+        <div class="sanphampet1">
+            <div class="sanphampet2">
+                <a href=""><img
+                        src="https://product.hstatic.net/1000238938/product/20b1ccb537f54255838ed785f1b4103f_21bb921459e54110ac173ce6f9120e08_medium.jpg"></a>
+                <h4>Đồ Chơi Cho Chó Banh Cao Su A1023 | PIAN PIAN</h4>
+                <p>42.000<sup>đ</sup></p>
+                <em>-20%</em>
+                <div class="xemthem">
+                    <a href="">XEM THÊM</a>
+                </div>
+            </div>
+            <div class="sanphampet2">
+                <a href=""><img
+                        src="https://product.hstatic.net/1000238938/product/do-choi-tron__8__06d3e35d20904f0493ce35920ae7cd77_medium.jpg"></a>
+                <h4>Đồ Chơi Cho Chó Banh Cao Su A1024 |PIAN PIAN</h4>
+                <p>52.000<sup>đ</sup></p>
+                <em>-37%</em>
+                <div class="xemthem">
+                    <a href="">XEM THÊM</a>
+                </div>
+            </div>
+            <div class="sanphampet2">
+                <a href=""><img
+                        src="https://product.hstatic.net/1000238938/product/4d803bdc49d542cfad9847b9a05b8ad5_ba2aab25b21949779445d40c2c8859f8_medium.jpg"></a>
+                <h4>Đồ Chơi Cho Chó Giúp Sạch Răng A992 | PIAN PIAN</h4>
+                <p>90.000<sup>đ</sup></p>
+                <em>-42%</em>
+                <div class="xemthem">
+                    <a href="">XEM THÊM</a>
+                </div>
+            </div>
+            <div class="sanphampet2">
+                <a href=""><img
+                        src="https://product.hstatic.net/1000238938/product/vong_gam_sach_rang_s-p720_medium.jpg"></a>
+                <h4>Đồ Chơi Cho Chó Giúp Sạch Răng P720 | PIAN PIAN</h4>
+                <p>56.000<sup>đ</sup></p>
+                <em>-12%</em>
+                <div class="xemthem">
+                    <a href="">XEM THÊM</a>
+                </div>
+            </div>
+            <div class="sanphampet2">
+                <a href=""><img
+                        src="https://product.hstatic.net/1000238938/product/9b3c788935d8425882bedbafa73fcc0c_9d10f5fc23804e15bcfbecdc03917107_medium.jpg"></a>
+                <h4>Đồ chơi cho chó hình đầu ngựa 20x22x15cm | TOUCHDOG</h4>
+                <p>48.000<sup>đ</sup></p>
+                <em>-66%</em>
+                <div class="xemthem">
+                    <a href="">XEM THÊM</a>
+                </div>
+            </div>
+            <div class="sanphampet2">
+                <a href=""><img
+                        src="https://product.hstatic.net/1000238938/product/ffa69f8732d74071bab915d7b81a4349_ad306930a0c34637b233ba0b4bacee4a_medium.jpg"></a>
+                <h4>Đồ Chơi Cho Chó Hình Que Kem P928 | PIAN PIAN</h4>
+                <p>20.000<sup>đ</sup></p>
+                <em>-31%</em>
+                <div class="xemthem">
+                    <a href="">XEM THÊM</a>
+                </div>
+            </div>
+            <div class="sanphampet2">
+                <a href=""><img
+                        src="https://product.hstatic.net/1000238938/product/dfbc8293a16249eb8ad299b1e963fde1_f0351393c0b746f490eeb168ee2871df_medium.jpg"></a>
+                <h4>Đồ chơi cho chó hình trái banh 15x15x15cm | TOUCHDOG - 15x15x15cm</h4>
+                <p>200.000<sup>đ</sup></p>
+                <em>-12%</em>
+                <div class="xemthem">
+                    <a href="">XEM THÊM</a>
+                </div>
+            </div>
+            <div class="sanphampet2">
+                <a href=""><img
+                        src="https://product.hstatic.net/1000238938/product/food_ball_p613_chinh_medium.jpg"></a>
+                <h4>Đồ Chơi Cho Chó Hình Trái Banh P613 | PIAN PIAN</h4>
+                <p>48.000<sup>đ</sup></p>
+                <em>-21%</em>
+                <div class="xemthem">
+                    <a href="">XEM THÊM</a>
+                </div>
+            </div>
+            <div class="sanphampet2">
+                <a href=""><img
+                        src="https://product.hstatic.net/1000238938/product/0ead75e605a34c78ac42d701cfa59c52_96be7afe93404301ab6e6b4f0427599b_medium.png"></a>
+                <h4>Đồ chơi cho thú cưng | Touchdog</h4>
+                <p>110.000<sup>đ</sup></p>
+                <em>-25%</em>
+                <div class="xemthem">
+                    <a href="">XEM THÊM</a>
+                </div>
+            </div>
+            <div class="sanphampet2">
+                <a href=""><img
+                        src="https://product.hstatic.net/1000238938/product/7111116dc03f4cf2ae9874e6d4f5d256_bcf3f451cb1f4b6d88fe98e5ce5909f6_medium.png"></a>
+                <h4>Đồ chơi cho thú cưng | Touchdog</h4>
+                <p>110.000<sup>đ</sup></p>
+                <em>-25%</em>
+                <div class="xemthem">
+                    <a href="">XEM THÊM</a>
+                </div>
+            </div>
+            <div class="sanphampet2">
+                <a href=""><img
+                        src="https://product.hstatic.net/1000238938/product/8d53d82584f94b33bf2223c89eb71296_8da15fbcb92a4d3bb3d508af3db422a4_medium.png"></a>
+                <h4>Đồ chơi cho thú cưng | Touchdog</h4>
+                <p>110.000<sup>đ</sup></p>
+                <em>-25%</em>
+                <div class="xemthem">
+                    <a href="">XEM THÊM</a>
+                </div>
+            </div>
+            <div class="sanphampet2">
+                <a href=""><img
+                        src="https://product.hstatic.net/1000238938/product/7674d1c07f954d969d5fd10edac56def_3aa33e229cf344f58da72caa5562706d_medium.png"></a>
+                <h4>Đồ chơi cho thú cưng | Touchdog</h4>
+                <p>110.000<sup>đ</sup></p>
+                <em>-25%</em>
+                <div class="xemthem">
+                    <a href="">XEM THÊM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =========footer 1=========== -->
+
+    <!-- <footer>
+        <div class="footer">
+            
+            <div class="footer1">
+                <div class="footer2">
+                <a href=""><img src="https://media.loveitopcdn.com/5766/anh-ba-na-pet-house-02.png"></a>
+                <p>Chúng tôi đặt sự ưu tiên khách hàng lên hàng đầu, với mong muốn được sự yêu quý khách hàng khi trải nhiệm tại shop của chúng tôi, với trang thiết bị hiện đại, phục vụ tận tình, sẽ không phụ lòng bất cứ khách hàng nào khi vào shop. Trân trọng cảm ơn quý khách hàng đã quan tâm </p>
+            </div>
+        </div>
+        <div class="footer1_1">
+            <div class="footer3">
+                <div class="noidungfooter">
+                <img src="https://shopcuadatff.online/upload/userfiles/images/1.png">
+                </div>
+                <div class="noidungfooter1">
+                <h5>Hoạt Động</h5>
+                <h6>1 Năm</h6>
+                </div>
+        </div>
+        <div class="footer3">
+            <div class="noidungfooter">
+            <img src="https://shopcuadatff.online/upload/userfiles/images/7.png">
+            </div>
+            <div class="noidungfooter1">
+            <h5>Thành Viên</h5>
+            <h6>12.600</h6>
+            </div>
+    </div>
+    <div class="footer3">
+        <div class="noidungfooter">
+        <img src="https://shopcuadatff.online/upload/userfiles/images/3(2).png">
+        </div>
+        <div class="noidungfooter1">
+        <h5>Lượt Truy Cập</h5>
+        <h6>28.000</h6>
+        </div>
+</div>
+<div class="footer3">
+    <div class="noidungfooter">
+    <img src="https://shopcuadatff.online/upload/userfiles/images/4(1).png">
+    </div>
+    <div class="noidungfooter1">
+    <h5>Đã Bán</h5>
+    <h6>2.400</h6>
+    </div>
+</div>
+<div class="footer3">
+    <div class="noidungfooter">
+    <img src="https://shopcuadatff.online/upload/userfiles/images/2(3).png">
+    </div>
+    <div class="noidungfooter1">
+    <h5>Trụ Sở</h5>
+    <h6>Có 1</h6>
+    </div>
+</div>
+    </div>
+    
+    <div class="fb-page" data-href="https://www.facebook.com/kinneko.petshop" data-tabs="timeline" data-width="350px" data-height="200px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/kinneko.petshop" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/kinneko.petshop">Kin Neko PetShop - Cửa Hàng Thú Cưng</a></blockquote></div>
+    
+        </div>
+    </footer> -->
+
+    <!-- =============footer 2=============== -->
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                <h3>VỀ CHÚNG TÔI</h3>
+                <a href="">
+                    <p>Giới thiệu</p>
+                </a>
+                <a href="">
+                    <p>Chính sách & Quy định chung</p>
+                </a>
+                <a href="">
+                    <p>Quy định và hình thức thanh toán</p>
+                </a>
+                <a href="">
+                    <p>Chính sách bảo hành</p>
+                </a>
+                <a href="">
+                    <p>Chính sách vận chuyển và giao nhận</p>
+                </a>
+                <a href="">
+                    <p>Chính sách bảo mật thông tin cá nhân</p>
+                </a>
+                <a href="">
+                    <p>Chính sách đổi/ trả hàng và hoàn tiền</p>
+                </a>
+
+            </div>
+            <div class="footer1">
+                <h3>THÔNG TIN CÔNG TY</h3>
+                <p>©2018 DogParadise Bản quyền được bảo hộ Công ty TNHH TOPDOG
+                    313 Hoàng Diệu, P6, Quận 4, TP Hồ Chí Minh, Việt Nam. Mã bưu chính 700000
+                    Điện thoại: 0922 333 111
+                    Giấy chứng nhận Đăng ký Kinh doanh số 0313596126 Do Sở Kế Hoạch và Đầu Tư TPHCM cấp ngày 31/12/2015
+                </p>
+
+            </div>
+            <div class="footer1">
+                <h3>MẠNG XÃ HỘI</h3>
+                <p>Hãy kết nối với chúng tôi.</p>
+                <ul>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></i>
+                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </ul>
+                <a href=""><img src="https://images.dmca.com/Badges/dmca_protected_28_120.png?ID=393dc76b-167d-4b15-9310-a196f58368a0"></a>
+                <div class="zalo">
+                    <a href="">
+                        <img src="https://stc-zaloprofile.zdn.vn/pc/v1/images/zalo_sharelogo.png">
+                        <p>Liên Hệ Bằng ZALO</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer2">
+                <h3>HỆ THỐNG SHOP THÚ CƯNG CỦA DATPHAM</h3>
+                <a href=""><h5>Dog Paradise Quận 1</h5></a>
+                <a href=""><p>7 Trần Khắc Chân, P.Tân Định, Quận 1, TPHCM</p></a>
+                <p>Điện thoại: <a href="">0900198888</a></p>
+                <a href=""><h5>Dog Paradise Quận 4</h5></a>
+                <a href=""><p>249 Khánh Hội, P2, Quận 4, TPHCM</p></a>
+                <p>Điện thoại: <a href="">0900198888</a></p>
+                <a href=""><h5>Dog Paradise Võ Văn Tần</h5></a>
+                <a href=""><p>217 Võ Văn Tần, P5, Quận 3, TPHCM</p></a>
+                <p>Điện thoại: <a href="">0900198888</a></p>
+            </div>
+            <div class="chusohuu">
+                <h4>Được thiết kế bởi: <a href="">Phạm Trường Đạt</a></h4>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thong bao pupup -->
+    <div class="tbpopup" id="tbpopup-1">
+        <div class="tboverlay"></div>
+        <div class="tbcontent">
+            <div class="tbclose-btn" onclick="thongbaopopup()">&times;</div>
+            <div style="font-size:30px;font-weight:bold">Xin chào</div>
+            <p>Cảm ơn bạn đã ghé thăm trang web của mình, chúc bạn một ngày mới vui vẽ và tràn đầy hạnh phúc!</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

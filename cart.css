@@ -1,0 +1,225 @@
+.noidungcart_1{
+    background-color: rgba(36, 36, 36, 0.744);
+    overflow: hidden;
+    margin-top: 80px;
+}
+.noidungcart{
+    padding-top: 50px;
+    background-color: rgba(36, 36, 36, 0.744);
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+}
+.noidungcart .noidungcart_left{
+float: left;
+width: 40%;
+margin-left: 10px;
+}
+.noidungcart .sanpham_cart1{
+    float: left;
+}
+.noidungcart .noidungcart_left a img{
+    width: 260px;
+    height: 260px;
+    float: left;
+}
+.noidungcart .sanpham_cart1_2{
+    float: left;
+    color: #fff;
+    margin: 10px 10px;
+}
+.noidungcart .sanpham_cart1_2 h4{
+    clear: both;
+   font-size: 18px;
+    width: 160px;
+    height: 60px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+.noidungcart .sanpham_cart1_2 em{
+  padding: 2px;
+  background-color: rgb(96, 207, 122);
+  border-radius: 5px;
+    
+}
+.noidungcart .sanpham_cart1_2 p{
+    
+  float: left;
+    
+}
+.noidungcart .sanpham_cart1_2 em{
+    float: right;
+   
+    
+}
+.noidungcart .sanpham_cart1_2  button{
+    font-size: 15px;
+    clear: both;
+    float: left;
+    padding: 10px 5px;
+    background-color: rgb(255, 2, 2);
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    margin-top: 50px;
+}
+.sanpham_cart2 .product-item:hover{
+    transform: scale(1.1, 1.1);
+}
+.sanpham_cart2 .product-item button:hover{
+    background-color: rgb(235, 252, 0);
+}
+.product-item-text p {
+    margin-top: 10px;
+    font-weight: 500;
+    color: aqua;
+}
+.noidung_1 h2{
+    clear: both;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.noidung_1 .ngang_1{
+    width: 100px;
+    border-bottom: 5px solid red;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.sanpham_cart2{
+    
+    overflow: hidden;
+    color: #fff;
+    clear: both;
+    padding-bottom: 30px;
+    
+}
+
+.product-item {
+    float: left;
+    margin-left: 18px;
+    max-width: 130px;
+    background-color: rgba(76, 75, 75, 0.768);
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(117, 116, 116);
+    transition: 0.2s ease-in-out;
+}
+.product-item h1{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 70px;
+}
+.sanpham_cart2 .product-item img{
+    width: 125px;
+    max-height: 100px;
+}
+.sanpham_cart2 .product-item button{
+    font-size: 12px;
+    padding: 5px 5px;
+    background-color: rgb(218, 251, 87);
+    border: none;
+    border-radius: 2px;
+    color: rgb(13, 13, 13);
+    
+}
+/* thanh toán */
+.noidungcart_right{
+    
+    float: right;
+    padding-right: 10px;
+}
+
+form{
+    height: 200px;
+    overflow: auto;
+    width: 500px;
+}
+.cart{
+    padding-top: 20px;
+    background-color: rgba(128, 128, 128, 0.786);
+    margin: auto;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: 10px;
+    
+}
+tbody tr td .title{
+    margin-left: 10px;
+    color: rgb(229, 255, 0);
+    width: 150px;
+   
+    
+}
+tbody tr td p{
+    margin-left: -25px;
+    color: rgb(3, 254, 241);
+    font-weight: 500;
+}
+tbody tr td .cart-delete{
+    color: rgb(255, 21, 0);
+    font-weight: 900;
+    -webkit-text-stroke: 0.5px rgb(253, 252, 252);
+    margin-left: -5px;
+}
+
+.cart tr th{
+    color: #fff;
+    
+    
+}
+.cart tr td{
+    color: #fff;
+    
+}
+.cart table{
+    width: 100%;
+   
+}
+.cart table tr td{
+    border-bottom: 1px solid #fff;
+    padding: 12px 10px;
+    
+}
+.cart tbody tr td {
+    padding-right: 10px;
+}
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+
+.cart button{
+    margin-left: 200px;
+   cursor: pointer;
+   background-color: rgba(65, 65, 65, 0.844);
+   color: rgb(250, 246, 246);
+   border: none;
+   padding: 5px 5px;
+   border-radius: 5px;
+   
+}
+.cart button:hover{
+    background-color: rgba(250, 6, 6, 0.886);
+    color: #fff;
+}
+/*-----------------Nâng cao------------------------*/
+/*.cart {
+    position: fixed;
+    height: 100vh;
+    width: 500px;
+    right: 0;
+    top: 0px;
+    background-color: rgb(141, 141, 141);
+    padding: 12px 20px;
+    overflow-y: scroll;
+}
+.cart-icon i {
+    cursor: pointer;
+}*/
