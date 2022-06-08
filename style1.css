@@ -918,6 +918,41 @@ header {
         margin: auto;
     }
 }
+
+@media(max-width: 480px){
+    .mathang1 {
+        width: 45%!important;
+        
+    }
+    .sanphampet2{
+        width: 45%!important;
+    }
+    .carousel-inner .carousel-item img {
+        height: 200px;
+    }
+    .search-bar input,
+    .search-btn {
+        max-width: 8em;
+        height: 3em;
+    }
+    .trangsanpham1 .sanpham1 .sanpham1_1{
+        width: 46%!important;
+    }
+    .sanphamcuashop{
+        width: 42%!important;
+    }
+    .cacshophoptac{
+        width: 95%!important;
+    }
+    #carouselExampleIndicators{
+        width: 95%;
+        margin: auto;
+    }
+    .trangsanpham .navbar{
+        width: 95%;
+        margin: auto;
+    }
+}
 @media(max-width: 320px){
     .mathang1 {
         width: 30%!important;
@@ -952,41 +987,6 @@ header {
         margin: auto;
     }
 }
-@media(max-width: 480px){
-    .mathang1 {
-        width: 45%!important;
-        
-    }
-    .sanphampet2{
-        width: 45%!important;
-    }
-    .carousel-inner .carousel-item img {
-        height: 200px;
-    }
-    .search-bar input,
-    .search-btn {
-        max-width: 8em;
-        height: 3em;
-    }
-    .trangsanpham1 .sanpham1 .sanpham1_1{
-        width: 46%!important;
-    }
-    .sanphamcuashop{
-        width: 45%!important;
-    }
-    .cacshophoptac{
-        width: 95%!important;
-    }
-    #carouselExampleIndicators{
-        width: 95%;
-        margin: auto;
-    }
-    .trangsanpham .navbar{
-        width: 95%;
-        margin: auto;
-    }
-}
-
 
 
 .tbpopup .tbclose-btn {
